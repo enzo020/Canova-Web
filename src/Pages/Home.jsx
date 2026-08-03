@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { getProducts } from '../services/api';
+import ProductCard from '../components/ProductCards';
 
 function Home() {
   const [produtos, setProdutos] = useState([]);
@@ -26,15 +27,13 @@ function Home() {
       <h1>Bem-vindo à Canova do Brasil</h1>
 
       <h2>Nossos Produtos</h2>
-      <ul>
-        {produtos.map((produto) => (
-          <li key={produto.id}>
-            <strong>{produto.nome}</strong> — {produto.descricao}
-          </li>
-        ))}
-      </ul>
+     <div className="product-list">
+  {produtos.map((produto) => (
+    <ProductCard key={produto.id} product={produto} />
+  ))}
+</div>
     </div>
   );
 }
 
-export default Home;  
+export default Home;
