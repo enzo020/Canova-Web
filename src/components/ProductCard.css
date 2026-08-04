@@ -1,0 +1,28 @@
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.product-card {
+  background-color: var(--color-background-alt);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+}
+
+.product-card h3 {
+  color: var(--color-primary);
+  margin-bottom: 0.5rem;
+}
+
+.product-card p {
+  color: var(--color-text-light);
+  font-size: 0.95rem;
+}

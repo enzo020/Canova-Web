@@ -1,3 +1,5 @@
+import './Footer.css';
+
 function Footer() {
   const anoAtual = new Date().getFullYear();
 
