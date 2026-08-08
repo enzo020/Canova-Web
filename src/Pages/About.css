@@ -1,0 +1,42 @@
+.about-page {
+  max-width: 800px;
+  margin: 3rem auto;
+  padding: 0 1.5rem;
+}
+
+.about-section {
+  margin-bottom: 2rem;
+}
+
+.about-section h2 {
+  color: var(--color-primary);
+  margin-bottom: 0.5rem;
+}
+
+.about-section p {
+  color: var(--color-text-light);
+}
+
+.about-lines {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+}
+
+.line-card {
+  background-color: var(--color-background-alt);
+  border-radius: 12px;
+  padding: 1.5rem;
+  border-left: 4px solid var(--color-secondary);
+}
+
+.line-card h3 {
+  color: var(--color-primary);
+  margin-bottom: 0.5rem;
+}
+
+.line-card p {
+  color: var(--color-text-light);
+  font-size: 0.95rem;
+}

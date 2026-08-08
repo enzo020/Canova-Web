@@ -1,0 +1,30 @@
+.where-page {
+  max-width: 700px;
+  margin: 3rem auto;
+  padding: 0 1.5rem;
+}
+
+.pharmacy-list {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.pharmacy-item {
+  background-color: var(--color-background-alt);
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pharmacy-item strong {
+  color: var(--color-primary);
+}
+
+.pharmacy-item span {
+  color: var(--color-text-light);
+  font-size: 0.9rem;
+}
