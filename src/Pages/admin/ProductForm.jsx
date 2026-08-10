@@ -10,6 +10,7 @@ function ProductForm({ produto, onSalvo, onCancelar }) {
   const [lines, setLines] = useState([]);
   const [salvando, setSalvando] = useState(false);
   const [erro, setErro] = useState(null);
+  const [imageUrl, setImageUrl] = useState(produto?.imageUrl || '');
 
   const { token } = useAuth();
   const isEditing = !!produto;
@@ -23,7 +24,7 @@ function ProductForm({ produto, onSalvo, onCancelar }) {
     setSalvando(true);
     setErro(null);
 
-    const dados = { name, description, lineId: Number(lineId) };
+    const dados = { name, description, imageUrl, lineId: Number(lineId) };
 
     try {
       if (isEditing) {
@@ -60,6 +61,15 @@ function ProductForm({ produto, onSalvo, onCancelar }) {
         value={description}
         onChange={(e) => setDescription(e.target.value)}
         required
+      />
+
+      <label htmlFor="imageUrl">URL da imagem</label>
+      <input
+        type="text"
+        id="imageUrl"
+        value={imageUrl}
+        onChange={(e) => setImageUrl(e.target.value)}
+        placeholder="https://..."
       />
 
       <label htmlFor="lineId">Linha</label>

@@ -1,13 +1,12 @@
 import './Header.css';
 import { Link } from 'react-router-dom';
-import logo from '../assets/2.png';
-
+import logo from '../Assets/Logo-Canova.png';
 function Header() {
   return (
     <header>
       <div className="header-container">
         <Link to="/" className="logo-link">
-          <img src={logo} alt="Canova do Brasil" className="logo" />
+          <img src={ logo } alt="Canova do Brasil" className="logo" />
         </Link>
 
         <nav>
