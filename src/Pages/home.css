@@ -1,14 +1,104 @@
-.home-products {
+.hero {
+  background-color: var(--color-primary);
+  padding: 5rem 2rem;
+}
+
+.hero-content {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hero h1 { color: white; }
+
+.hero p {
+  color: rgba(255, 255, 255, 0.9);
+  margin: 1.2rem 0 2rem;
+  font-size: 1.05rem;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.hero-actions .btn-outline {
+  color: white;
+  border-color: white;
+}
+.hero-actions .btn-outline:hover {
+  background-color: white;
+  color: var(--color-primary);
+}
+
+.home-lines, .home-how {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 3.5rem 2rem;
+  padding: 4rem 2rem;
+  text-align: center;
 }
 
-.home-products .eyebrow {
-  display: block;
-  margin-bottom: 0.5rem;
+.section-subtitle {
+  color: var(--color-text-light);
+  margin-top: 0.4rem;
+  margin-bottom: 2.5rem;
 }
 
-.home-products h2 {
-  margin-bottom: 2rem;
+.lines-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.line-card {
+  padding: 2rem;
+  border-radius: 16px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 160px;
+  transition: transform 0.2s ease;
+}
+.line-card:hover { transform: translateY(-4px); }
+
+.line-card-human { background-color: var(--color-line-human); }
+.line-card-vet { background-color: var(--color-line-vet); }
+
+.line-card span {
+  font-weight: 600;
+  color: var(--color-ink);
+  margin-top: 1.5rem;
+}
+
+.home-how { background-color: var(--color-surface); }
+
+.how-steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  margin: 2.5rem 0;
+  text-align: left;
+}
+
+.how-step {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+
+.how-step-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: var(--color-primary);
+  color: white;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
 }
