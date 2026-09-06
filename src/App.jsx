@@ -1,15 +1,15 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { AuthProvider } from './context/AuthContext';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import Home from './pages/Home';
-import About from './pages/About';
-import WhereFound from './pages/WhereFound';
-import Studies from './pages/Studies';
-import Contacts from './pages/Contacts';
-import AdminLogin from './pages/admin/AdminLogin';
-import ProtectedRoute from './components/ProtectedRoute';
-import AdminDashboard from './pages/admin/AdminDashboard';
+import Header from './Components/Header';
+import Footer from './Components/Footer';
+import Home from './Pages/Home';
+import About from './Pages/About';
+import WhereFound from './Pages/WhereFound';
+import Studies from './Pages/Studies';
+import Contacts from './Pages/Contacts';
+import AdminLogin from './Pages/admin/AdminLogin';
+import ProtectedRoute from './Components/ProtectedRoute';
+import AdminDashboard from './Pages/admin/AdminDashboard';
 
 function App() {
   return (
